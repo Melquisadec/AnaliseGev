@@ -1,0 +1,164 @@
+
+################# TABELA DESCRITIVAS DOS LOG RETURNS IMPORTANTE NÃO COLAR NO README ESSA PARTE COMENTADA COLAR APENAS O CÓDIGO OS CABEÇALHOS SÃO APENAS PARA IDENTIFICAR A TABELA ####################
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabela</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            border-bottom: 1px solid black;
+        }
+        td {
+            border-bottom: 1px solid lightgray;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Estatísticas descritivas para o retorno logaritmo dos preços das ações</h2>
+<table>
+    <caption>Estatísticas descritivas para o retorno logaritmo dos preços das ações.</caption>
+    <thead>
+        <tr>
+            <th>VA</th>
+            <th>Dados</th>
+            <th>Min</th>
+            <th>1st Qu.</th>
+            <th>Median</th>
+            <th>Mean</th>
+            <th>3rd Qu.</th>
+            <th>Max</th>
+            <th>n</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>$X_1$</td><td>BBAS3</td><td>-0.1057</td><td>-0.0097</td><td>0.0019</td><td>0.0012</td><td>0.0136</td><td>0.0736</td><td>330</td></tr>
+        <tr><td>$X_2$</td><td>ITUB4</td><td>-0.0492</td><td>-0.0105</td><td>0.0004</td><td>0.0006</td><td>0.0109</td><td>0.0794</td><td>330</td></tr>
+        <tr><td>$X_3$</td><td>VALE3</td><td>-0.0689</td><td>-0.0140</td><td>0.0001</td><td>-0.0002</td><td>0.0128</td><td>0.0989</td><td>330</td></tr>
+        <tr><td>$X_4$</td><td>VIIA3</td><td>-0.1075</td><td>-0.0344</td><td>-0.0060</td><td>-0.0030</td><td>0.0231</td><td>0.1504</td><td>330</td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
+
+################### TABELA DE ESTIMATIVAS DE MÁXIMA VEROSSIMILHANÇA##################################
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabela</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            border-bottom: 1px solid black;
+        }
+        td {
+            border-bottom: 1px solid lightgray;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Estimativas ML, Verossimilhança($ll_{max}$) e p-valor-ks para o modelo GEV</h2>
+<table>
+    <caption>Estimativas ML, Verossimilhança($ll_{max}$) e p-valor-ks para o modelo GEV.</caption>
+    <thead>
+        <tr>
+            <th>VA</th>
+            <th>Data set</th>
+            <th>$\hat{\mu}$</th>
+            <th>$\hat{\sigma}$</th>
+            <th>$\hat{\gamma}$</th>
+            <th>$-ll_{max}$</th>
+            <th>KS p-value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>$X_1$</td><td>BBAS3</td><td>-0.0063</td><td>0.0219</td><td>-0.2535</td><td>-803.9168</td><td>0.0147</td></tr>
+        <tr><td>$X_2$</td><td>ITUB4</td><td>-0.0064</td><td>0.0165</td><td>-0.1545</td><td>-870.9392</td><td>0.4299</td></tr>
+        <tr><td>$X_3$</td><td>VALE3</td><td>-0.0095</td><td>0.0222</td><td>-0.1631</td><td>-774.0895</td><td>0.2331</td></tr>
+        <tr><td>$X_4$</td><td>VIIA3</td><td>-0.0217</td><td>0.0396</td><td>-0.1170</td><td>-567.6979</td><td>0.6996</td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
+
+############# ESTIMATIVA DE CONFIABILIDADE PONTUAL E INTERVALAR ######################################################################
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabela</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            border-bottom: 1px solid black;
+        }
+        td {
+            border-bottom: 1px solid lightgray;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Estimativa das probabilidades SSR e CI Bootstrap</h2>
+<table>
+    <caption>Estimativa das probabilidades SSR e CI Bootstrap.</caption>
+    <thead>
+        <tr>
+            <th>$R=P(X<Y)$</th>
+            <th>$\hat{R}$</th>
+            <th>$\hat{R}_{NP}$</th>
+            <th>$\hat{R}_{Boot}$</th>
+            <th>95% CI</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>P($X_3 <  X_1$)</td><td>0.5283</td><td>0.5242</td><td>0.5277</td><td>(0.4883; 0.5676)</td></tr>
+        <tr><td>P($X_3 <  X_2$)</td><td>0.5174</td><td>0.5242</td><td>0.5181</td><td>(0.4766; 0.5569)</td></tr>
+        <tr><td>P($X_3 < X_4$)</td><td>0.4506</td><td>0.4364</td><td>0.4500</td><td>(0.4055; 0.4944)</td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
